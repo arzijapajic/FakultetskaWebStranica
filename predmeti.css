@@ -1,0 +1,143 @@
+body{
+    background-image: url(background.jpg);
+    
+    background-size:cover; 
+ 
+}
+.header{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: blue;
+    font-family:Cambria, Cochin;
+}
+.meni{
+   list-style:none;
+   text-align: center;
+   padding: 0px 0px 0px 0px;
+   background-color:lightskyblue;
+}
+.meni > li{
+   display: inline-block;
+   padding: 10px;   
+}
+.meni > li > a{
+   text-decoration: none;
+   color:grey;
+}
+.meni > li >a:hover{
+   padding: 10px;
+   background-color: lightgrey;
+}
+a:link {
+    text-decoration: none;
+  }
+a:visited {
+    text-decoration: none;
+  }
+a:hover {
+    text-decoration: underline;
+  }
+a:active {
+    text-decoration: underline;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:whitesmoke;
+    color:navy;
+    text-align: center;
+ }
+.footer > li{
+    display: inline-block;
+    padding: 10px;   
+    font-style: italic;
+}
+
+
+  .parent {
+    
+    width: 70%; 
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+ .div1 {
+   
+   background-color:lightgray;
+    color: blue;
+    text-align: center;
+    grid-area: 1 / 1 / 3 / 2; 
+    padding: 20px;
+    font-weight: bold;
+     border: 2px solid grey;
+     border-bottom: none;
+      border-right: none;
+    }
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    border:2px solid grey;
+     padding: 10px;
+     border-bottom: none;
+    border-right: none;}
+.div3 {
+      grid-area: 2 / 2 / 3 / 3;
+       border: 2px solid grey;
+        padding: 10px;
+         border-bottom: none;
+          border-right: none;
+}
+.div4 {
+   grid-area: 1 / 3 / 2 / 4;
+   border:2px solid grey;
+    padding: 10px; 
+   border-bottom: none;
+}
+.div5 {
+   grid-area: 2 / 3 / 3 / 4;
+    border:2px solid grey;
+     text-align: left;
+      padding: 10px;
+       border-bottom: none;
+ }
+.div6 {
+ grid-area: 3 / 1 / 4 / 3;
+  border:2px solid grey; 
+  padding: 10px;
+   border-right: none;
+}
+.div7 { 
+      grid-area: 3 / 3 / 4 / 4; 
+      border:2px solid grey;
+       padding: 10px;
+}
+.hidden {
+  display: none;
+}
+
+button {
+  
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  
+  
+}
+
+button:hover {
+  background-color: #e7e7e7;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.space{
+  width:15px;
+    height:auto;
+    display:inline-block;
+}

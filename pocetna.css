@@ -1,0 +1,120 @@
+body{
+     background-image: url(background.jpg);
+     background-size:cover;
+}
+.header{
+     width: 100%;
+     background-color: white;
+     text-align: center;
+     margin-right: auto;
+     margin-left: auto;
+     color: blue;
+     font-family:Cambria, Cochin;
+}
+.meni{
+    list-style:none;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    background-color:lightskyblue;
+}
+.meni > li{
+    display: inline-block;
+    padding: 10px;   
+}
+.meni > li > a{
+    text-decoration: none;
+    color:grey;
+}
+.meni > li >a:hover{
+    padding: 10px;
+    background-color: lightgrey;
+}
+.lista1{
+    height:300px;
+    width: 220px;
+    list-style-image: url(booklogo1.png);
+    border:1px solid orange;
+    display: block;
+    max-width: 100%;
+    margin-left: 50px;
+    background-color: white;
+   float: left;
+}
+.lista2{
+    height:300px;
+    width: 220px;
+    background-color:white;
+    list-style-image: url(computerlogo.jpg);
+    border:1px solid orange;
+    display: block;
+    max-width: 100%;
+    margin-right: 50px;
+    float: right;
+}
+a:link {
+    text-decoration: none;
+  }
+a:visited {
+    text-decoration: none;
+  }
+a:hover {
+    text-decoration: underline;
+  }
+a:active {
+    text-decoration: underline;
+  }
+.fakultet{
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     
+}
+.naziv{
+    padding-bottom: 10px;
+    list-style-image: none;
+    list-style-type: none;
+    font-family: Cambria, Cochin;
+    font-size:100%;
+    color: navy;
+    font-weight: bold;
+}
+/*.lista1 > .predmeti{
+    font-family: Cambria, Cochin;
+    font-size:100%;
+    color: navy;
+}
+.lista2 > .predmeti{
+    font-family: Cambria, Cochin;
+    font-size:100%;
+    color: navy;
+} */
+div {
+    width: 300px;
+    border:0px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:whitesmoke;
+    color:navy;
+    text-align: center;
+ }
+.footer > li{
+    display: inline-block;
+    padding: 10px;   
+    font-style: italic;
+}
+.razmak{
+    padding-bottom:10px ;
+}
+
+
+
+
+      
+    
+
+  
+ 

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spirala 1,Zadatak 3</title>
+    <link rel="stylesheet" href="godine.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="skripta.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.css">
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="logofakulteta.png" alt="Logo">
+        <p class="text">Razvoj softvera</p>
+
+        <ul class="meni">
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="godine.html">Godine</a></li>
+            <li><a href="osoblje.html">Osoblje</a></li>
+            <li><a href="laboratorije.html">Laboratorije</a></li>
+            <li><a href="predmeti.html">Predmeti</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <label for="searchByClass">Pretraga po predmetu: </label>
+            <input id="searchByClass" type="text" class="form-control" placeholder="Upišite ime predmeta..." onkeyup="Pretraga.pretragaPredmet(this.value)">
+
+            <label for="searchByTeacher">Pretraga po nastavniku: </label>
+            <input id="searchByTeacher" type="text" class="form-control" placeholder="Upišite ime nastavnika..." onkeyup="Pretraga.pretragaNastavnik(this.value)">
+
+            <label for="searchByYear">Pretraga po godini: </label>
+            <input id="searchByYear" type="text" class="form-control" placeholder="Upišite godinu..." onkeyup="Pretraga.pretragaGodina(this.value)">
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <br>
+    <table onmouseover="newFunction(this)" class="tabela1" id="table-classes">
+        <tr class="tabelatop1 first-year">
+            <td colspan="3">Prva godina</td>
+        </tr>
+
+        <tr class="first-year ">
+            <td class="a">Naziv predmeta</td>
+            <td class="a">Opis</td>
+            <td class="a">Profesor</td>
+        </tr class="first-year ">
+
+        <tr class="first-year ">
+            <td>Matematika u računarstvu 1</td>
+            <td>Cilj kursa je ponuditi studentima najosnovnija znanja iz nekih matematičkih disciplina koje imaju primjene u računarstvu, kao što su matematička logika, teorija skupova, elementarna teorija brojeva, te teorija automata i formalnih jezika.</td>
+            <td>R.prof.dr Željko Jurić,dipl.ing.el<br>dr Razija Turčinhodžić,dipl.ing.el</td>
+        </tr>
+        <tr class="first-year ">
+            <td>Uvod u programiranje</td>
+            <td>Studenti se upoznaju sa programskim jezikom C te dizajniraju jednostavne programe koji uključuju naredbe za kontrolu toka programa, nizove, strukture, funkcije, pokazivače ulazno-izlazne operacije itd.</td>
+            <td>Doc.dr Vedran Ljubović,dipl.ing.el</td>
+        </tr>
+        <tr class="first-year ">
+            <td>Frontend web tehnologije</td>
+            <td>Cilj predmeta je da studenti steknu znanja o: HTMLu, CSSu, UI i UX dizajnu, responzivnom web dizajnu,JavaScriptu itd.</td>
+            <td>V.prof.dr Vensada Okanović,dipl.ing.el</td>
+        </tr>
+        <tr class="first-year ">
+            <td>Uvod u baze podataka</td>
+            <td>Cilj predmeta je da se steknu znanja o: bazama podatka – specijalno relacionim bazama podataka,SQL jeziku,pravilima za definisanje šeme, kao i osnove transakcijskog i konkurentnog rada baze.</td>
+            <td>Doc.dr Emir Buza, dipl.ing.el</td>
+        </tr>
+        <tr class="first-year ">
+            <td>Računarska pismenost</td>
+            <td> Lica se upoznaju sa različitim komponentama računara, različitim sistemima i njihovim međusobnim povezivanjem, kao i strategijama rješavanja problema.</td>
+            <td>dr Amila Akagić, dipl.ing.el.</td>
+        </tr>
+
+        <tr class="first-year ">
+            <td>Matematika u računarstvu 2</td>
+            <td>Cilj predmeta je da se steknu znanja o: kompleksnim brojevima,matricama te analitičkoj geometriji u dvodimenzionalnom i trodimenzionalnom >prostoru.
+            </td>
+            <td>//</td>
+        </tr>
+        <tr class="first-year ">
+            <td>Tehnike programiranja</td>
+            <td>Studentima se prezentira metodologija oblikovanja programskih rješenja temeljena na objektno orijentiranom programiranju.</td>
+            <td>R.prof.dr Željko Jurić,dipl.ing.el</td>
+        </tr>
+        <tr class="first-year ">
+            <td>Razvoj softvera</td>
+            <td>Razvijanje softvera na osnovu UML dijagrama u Java programskom jeziku. </td>
+            <td>Doc.dr Vedran Ljubović,dipl.ing.el</td>
+        </tr>
+        <tr class="first-year ">
+            <td>Računarske arhitekture<br> i mreže</td>
+            <td>Kurs se bavi teorijom dizajna i konstrukcijom računara, i upoznavanjem sa računarskim mrežama.</td>
+            <td>R.prof.dr Samir Ribić,dipl.ing.el</td>
+        </tr>
+        <tr class="first-year ">
+            <td>Vjerovatnoća i statistika</td>
+            <td>Uvodi se pojam vjerojatnostnog prostora i slučajnih varijabli. Obrađuju se osnovne diskretne i neprekinute slučajne varijable, te slučajni vektori. Daju se osnove teorije uzoraka, teorije procjena i statističkih testova. </td>
+            <td>V.prof.dr Amela Muratović-Ribić</td>
+        </tr>
+        <tr class="tabelatop2 second-year">
+            <td class="second-year" colspan="3">Druga godina</td>
+        </tr>
+        <tr class="second-year">
+            <td class="a">Naziv predmeta</td>
+            <td class="a">Opis</td>
+            <td class="a">Profesor</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Algoritmi i strukture<br> podataka</td>
+            <td>Uvod u algoritme, analiza algoritama, složenost i ocjena složenosti algoritama ,notacije,definicija, memorijska reprezentacija i klasifikacija struktura podataka, sekvencijalna implementacija steka i reda itd.</td>
+            <td>R.prof.dr.Haris Šupić,dipl.ing.el</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Programski jezici i<br>prevodioci</td>
+            <td>Ocjena i klasifikacija programskih jezika,opis sintakse i semantike.</td>
+            <td>R.prof.dr Samir Ribić,dipl.ing.el</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Interakcija čovjek-računar</td>
+            <td>Projektovanje i implementacija interfejsa čovjek-mašina.</td>
+            <td>V.prof.dr. Dušanka Bošković<br> Dr. Nihad Borovina</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Backend web tehnologije</td>
+            <td>Protokoli na web-u: HTTP, HTTPS protokoli, metode, zaglavlja,URI, zahtjevi i odzivi principi web servera, CGI interfejs ,Java web programiranje, servleti i sadržioci servleta ,Java Server Pages, skriptleti, upotreba JSTL oznaka,itd. </td>
+            <td>V.prof.dr Vensada Okanović,dipl.ing.el</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Skladišta podataka</td>
+            <td>Uvod u skladišta podataka,planiranje i izgradnja,dizajn skladišta podataka,shema skladišta podataka, dimenzije i tabele dimenzija, te komponente skladišta podataka. </td>
+            <td>//</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Verifikacija i validacija<br>softvera</td>
+            <td>Studenti kroz kurs dobivaju dobra specijalistička znanja iz oblasti softver inžinjeringa vezanih za osiguranje i kontrolu kvaliteta softvera.</td>
+            <td>Prof. dr Dženana Đonko,dipl.ing.el</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Razvoj mobilnih aplikacija</td>
+            <td>Principi razvoja mobilnih aplikacija: Mobilni korisnički interfejs, upoznavanje s Android platformom.</td>
+            <td>V.prof.dr Vensada Okanović,dipl.ing.el</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Napredni razvoj <br>softvera</td>
+            <td>Uznavanje tehnika u primjeni u modernom razvoju softvera, uznavanje pojmova neprekidne integracije i instalacije (deployment) i DevOps te njihove uloge u procesu razvoja softvera.
+            </td>
+            <td>doc.dr Vedran Ljubovic,dipl.ing.el</td>
+        </tr>
+        <tr class="second-year ">
+            <td>Osnove informacionih<br>sistema</td>
+            <td>Upoznavanje s informacionim sistemima.</td>
+            <td>Doc.dr.Tanović Anel,dipl.el.ing.</td>
+        </tr>
+
+    </table>
+
+
+    <table class="tabela2 ">
+        <tr>
+            <th class="tabela2top " colspan="6 ">Prva godina</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="dani ">Ponedjeljak</td>
+            <td class="dani ">Utorak</td>
+            <td class="dani ">Srijeda</td>
+            <td class="dani ">Črtvrtak</td>
+            <td class="dani ">Petak</td>
+        </tr>
+        <tr>
+            <td>9:00</td>
+            <td class="predavanja ">Matematika u<br>računarstvu<br>(2-01)</td>
+            <td></td>
+            <td class="predavanja "> <br>Uvod u baze<br>podataka<br>MA</td>
+            <td class="vjezbe ">Uvod u<br> programiranje<br>(0-02)</td>
+            <td class="kombinacija ">Matematika u<br>računarstvu 1<br>0-02<br>Osnove računarsva<br>0-02</td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td class="predavanja ">Matematika u<br>računarstvu<br>(2-01)</td>
+            <td></td>
+            <td class="predavanja "><br>Uvod u baze<br>podataka<br>MA</td>
+            <td class="vjezbe ">Uvod u <br>programiranje<br>(0-02)</td>
+            <td class="kombinacija ">Matematika u<br>računarstvu 1<br>0-02<br>Osnove računarsva<br>0-02<br></td>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td class="predavanja ">Matematika u<br>računarstvu<br>(2-01)</td>
+            <td></td>
+            <td class="predavanja ">Uvod u baze<br>podataka<br>MA</td>
+            <td></td>
+            <td class="tutorijali ">Matematika u<br>računarstvu<br>(2-02)</td>
+        </tr>
+        <tr>
+            <td>12:00</td>
+            <td class="predavanja ">Matematika u<br>računarstvu<br>(2-01)</td>
+            <td></td>
+            <td class="kombinacija ">Uvod u baze<br>podataka<br>(1-04)<br>Frontend web<br>tehnologije<br>(1-15)</td>
+            <td></td>
+            <td class="tutorijali ">Matematika u<br>računarstvu<br>(2-02)</td>
+        </tr>
+        <tr>
+            <td>13:00</td>
+            <td></td>
+            <td class="vjezbe ">Frontend web<br>tehnologije<br>(1-15)<br></td>
+            <td class="kombinacija ">Uvod u baze<br>podataka<br>(1-04)<br>Frontend web<br>tehnologije<br>(1-15)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>13:30</td>
+            <td></td>
+            <td class="vjezbe ">Frontend web<br>tehnologije<br>(1-15)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>14:00</td>
+            <td></td>
+            <td class="vjezbe ">Frontend web<br>tehnologije<br>(1-15)<br></td>
+            <td></td>
+            <td></td>
+            <td class="vjezbe ">Računarska <br>pismenost<br>(1-13)</td>
+        </tr>
+        <tr>
+            <td class="tabela2top " colspan="6 ">Druga godina</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="dani ">Ponedjeljak</td>
+            <td class="dani ">Utorak</td>
+            <td class="dani ">Srijeda</td>
+            <td class="dani ">Črtvrtak</td>
+            <td class="dani ">Petak</td>
+        </tr>
+        <tr>
+            <td>9:00</td>
+            <td></td>
+            <td class="predavanja ">Algoritmi i <br>strukture podataka<br>(MA)</td>
+            <td class="predavanja ">Web <br>tehnologije<br>(0-01)</td>
+            <td></td>
+            <td class="predavanja ">Programski jezici<br>i prevodioci<br>(S0)</td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td></td>
+            <td class="predavanja ">Algoritmi i <br>strukture podataka<br>(MA)</td>
+            <td class="predavanja ">Web <br>tehnologije<br>(0-01)</td>
+            <td></td>
+            <td class="predavanja ">Programski jezici<br>i prevodioci<br>(S0)</td>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td class="vjezbe ">Web <br>tehnologije<br>(1-15)</td>
+            <td class="predavanja ">Algoritmi i <br>strukture podataka<br>(MA)</td>
+            <td class="predavanja ">Web <br>tehnologije<br>(0-01)</td>
+            <td></td>
+            <td class="predavanja ">Programski jezici<br>i prevodioci<br>(S0)</td>
+        </tr>
+        <tr>
+            <td>12:00</td>
+            <td class="vjezbe ">Web <br>tehnologije<br>(1-15)</td>
+            <td class="vjezbe ">Verifikacija i <br>validacija softvera<br>(1-15)</td>
+            <td></td>
+            <td class="predavanja ">Verifikacija i<br> validacija Softvera<br>(A3)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>13:00</td>
+            <td></td>
+            <td class="vjezbe ">Verifikacija i <br>validacija softvera<br>(1-15)</td>
+            <td></td>
+            <td class="predavanja ">Verifikacija i<br> validacija Softvera<br>(A3)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>14:00</td>
+            <td class="vjezbe ">Programski <br>jezici i <br>prevodioci(1-11)</td>
+            <td></td>
+            <td></td>
+            <td class="predavanja ">Verifikacija i<br> validacija Softvera<br>(A3)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>15:00</td>
+            <td class="vjezbe ">Algoritmi i <br>strukture podataka<br>(1-04)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>16:00</td>
+            <td class="vjezbe ">Algoritmi i <br>strukture podataka<br>(1-04)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>17:00</td>
+            <td class="vjezbe ">Interakcija<br> čovjek-računar<br>(0-13)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>18:00</td>
+            <td class="vjezbe ">Interakcija<br> čovjek-računar<br>(0-13)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+    <ul class="footer ">
+        <li>Elektrotehnički fakultet Sarajevo</li>
+        <li>Razvoj softvera</li>
+        <li><a href="http://etf.unsa.ba/ ">etf.unsa.ba</a></li>
+
+    </ul>
+    <script src="pretraga.js "></script>
+    <script src="godine.js "></script>
+
+</body>

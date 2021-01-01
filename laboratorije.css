@@ -1,0 +1,97 @@
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    gap: 10px;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: blue;
+    font-family: Cambria, Cochin;
+}
+
+.meni {
+    list-style: none;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    background-color: lightskyblue;
+}
+
+.meni>li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.meni>li>a {
+    text-decoration: none;
+    color: grey;
+}
+
+.meni>li>a:hover {
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: navy;
+    text-align: center;
+}
+
+.footer>li {
+    display: inline-block;
+    padding: 10px;
+    font-style: italic;
+}
+
+.container {
+    background-color: lightgrey;
+    color: navy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.klasa {
+    border-top: 2px solid white;
+}
+
+.klasa1 {
+    border-right: 2px solid white;
+}
+
+.klasa2 {
+    border-right: 2px solid white;
+    border-bottom: 0.5px solid white;
+}
+
+.klasa3 {
+    border-right: 2px solid white;
+    border-bottom: 0.5px solid white;
+}
+
+.container {
+    width: 60%;
+}

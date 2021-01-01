@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spirala 2, Zadatak 3</title>
+        <link rel="stylesheet" href="predmeti.css">
+        <script src="skripta.js"></script>
+        <meta charset="UTF-8">
+        
+    </head>
+
+    <body>
+        <div class="header">
+            <img src="logofakulteta.png" alt="Logo" > 
+            <p class="text">Razvoj softvera</p>
+                
+             <ul class="meni">
+                 <li><a href="pocetna.html">Početna</a></li>
+                 <li><a href="kontakt.html">Kontakt</a></li>
+                 <li><a href="godine.html">Godine</a></li>
+                 <li><a href="osoblje.html">Osoblje</a></li>
+                 <li><a href="laboratorije.html">Laboratorije</a></li>
+                 <li><a href="predmeti.html">Predmeti</a></li>
+    
+             </ul>
+             <br><br>
+             <button type="button" onclick="show('prvagodina');">Prva godina</button>
+             <div class="space"></div>
+             <button type="button" onclick="show('drugagodina');">Druga godina</button>
+             <div class="space"></div>
+             <button type="button" onclick="Prikazi()">Svi predmeti</button>
+             <div class="space"></div>
+             
+             
+             
+             <br><br><br>
+            </div>
+            
+            <div id="prvagodina">
+            <div class="parent">
+                <div id="UUP" class="div1">Predmet:<br>Uvod u programiranje</div>
+                <div class="div2">Profesor: Vedran Ljubović</div>
+                <div class="div3">Asistent: Jasmina Husić</div>
+                <div class="div4">Broj predavanja: 40</div>
+                <div class="div5"> Broj vježbi: 26</div>
+                <div class="div7">Opis predmeta:<br>Studenti se upoznaju sa programskim jezikom C te dizajniraju jednostavne programe
+                     koji uključuju naredbe za kontrolu toka programa, nizove, strukture, funkcije, pokazivače ulazno-izlazne operacije itd.</div>
+                <div class="div6">Teme:
+                     <ul>
+                        <li> Programski jezik C: sintaksa, tipovi podataka, lokalne i globalne
+                                varijable.</li>
+                        <li> Kontrolne strukture, operatori, nizovi, pokazivači, deklaracija i
+                                inicijalizacija pokazivača, stringovi.</li>
+                        <li>Funkcije, definicija funkcije, poziv funkcije, prototip funkcije,
+                                argumenti funkcije i prijenos podataka u funkcije: prijenos po
+                                vrijednosti i prijenos preko pokazivača, rekurzivne funkcije.</li>
+                        <li> Strukture, nizovi struktura, pristup elementima strukture, operacije
+                                nad strukturama.</li>
+                        <li>Datoteke, rad sa datotekama, modularnost programa, biblioteke
+                                funkcija, dinamičko zazimanje memorije.</li>  </ul>
+                        </div>
+            </div>
+           
+            
+            <br>
+
+            <div class="parent">
+                <div id="FWT" class="div1">Predmet:<br>Frontend web tehnologije</div>
+                <div class="div2">Profesor: Vensada Okanović</div>
+                <div class="div3">Asistent: Irfan Prazina</div>
+                <div class="div4">Broj predavanja: 40</div>
+                <div class="div5"> Broj vježbi: 20</div>
+                <div class="div7">Opis predmeta:<br>Cilj predmeta je da studenti steknu znanja o: HTMLu, CSSu, UI i UX dizajnu, responzivnom web dizajnu,JavaScriptu itd.</div>
+                <div class="div6">Teme:
+                     <ul>
+                        <li>Uvod u Web tehnologije: standardne arhitekture i načini
+                            programiranja, thin-client model, baziran na Browser/WebServer,web
+                            arhitektura</li>
+                        <li> HTML, struktura, pasusi, oznake za formatiranje, formulari, tabele</li>
+                        <li>Kaskadni listovi stilova, vrste selektora, selektori HTML elemenata,
+                            selektori klase, atributni selektori
+                            </li>
+                        <li> JavaScript, sintaksa jezika, obrada događaja na stranici, pristup
+                            elementima HTML dokumenta, HTML DOM
+                            </li>
+                        <li>Protokoli na web-u: HTTP, HTTPS protokoli, metode, zaglavlja,
+                            URI, zahtjevi i odzivi
+                            </li>  </ul>
+                        </div></div>
+
+            <br>
+                        <div class="parent">
+                            <div id="UBP" class="div1">Predmet:<br>Uvod u baze podataka</div>
+                            <div class="div2">Profesor: Emir Buza</div>
+                            <div class="div3">Asistent: Emir Cogo</div>
+                            <div class="div4">Broj predavanja: 40</div>
+                            <div class="div5"> Broj vježbi: 20</div>
+                            <div class="div7">Opis predmeta:<br>Cilj predmeta je da se steknu znanja o: bazama podatka – specijalno relacionim bazama podataka,SQL jeziku,
+                                pravilima za definisanje šeme, kao i osnove transakcijskog i konkurentnog rada baze.</div>
+                            <div class="div6">Teme:
+                                 <ul>
+                                    <li>Uvod u baze podataka: Historijski pregled nastanka sistema za
+                                        upravljenje podacima (DBMS).Tipovi sistema za upravljanje bazama
+                                        podataka. Arhitektura sistema za upravljanje bazama podataka.
+                                        Osnovni elementi sistema za upravljanje bazama podataka. </li>
+                                    <li>Relacijski model podataka: Elementi relacijskog modela podataka.
+                                        Tipovi veza između tabela. Entitet - veza dijagrami.</li>
+                                    <li>Relacijski upitni jezik: Standardi relacionog upitnog jezika.
+                                        Struktuirani upitni jezika – SQL. SQL naredbe za kreiranje objekata
+                                        u bazi podataka. SQL naredbe za: upisivanje, izmjenu i brisanje
+                                        podataka iz baze podataka.
+                                        </li>
+                                    <li>. Poboljšano pretraživanje podataka: Osnovni principi spajanja više
+                                        tabela (join). Kartezijanski prizvod. Unutrašnje nasuport vanjog
+                                        spajanja. Spajanje dvije ili više tabela po uslovu jednakosti. Spajanje
+                                        dvije ili više tabela po bilo kom uslovu osim po uslovu jednakosti.
+                                        </li>
+                                    <li>Integritet podataka: Definicija integriteta podataka. Osnovni načini
+                                        definiranja uslova integriteta. Domenski atributi i njigova
+                                        implementacija putem integritate podataka.
+                                        </li>  </ul>
+                                    </div></div>
+            <br>
+            <div class="parent">
+                <div id="TP" class="div1">Predmet:<br>Tehnike programiranja</div>
+                <div class="div2">Profesor: Željko Jurić</div>
+                <div class="div3">Asistent: Kerim Hodžić</div>
+                <div class="div4">Broj predavanja: 56</div>
+                <div class="div5"> Broj vježbi: 26</div>
+                <div class="div7">Opis predmeta:<br>Studentima se prezentira metodologija oblikovanja programskih rješenja temeljena 
+                    na objektno orijentiranom programiranju.</div>
+                <div class="div6">Teme:
+                     <ul>
+                        <li>Napredno imperativno programiranje u jeziku C++: Dinamička
+                            alokacija memorije; Dinamičke promjenljive; Curenje memorije;
+                            Dinamički nizovi; Dinamička alokacija i izuzeci; Složeni pokazivački
+                            tipovi (pokazivači na nizove, nizovi pokazivača, pokazivači na
+                            pokazivače); </li>
+                        <li>Dinamička alokacija višedimenzionalnih nizova
+                            pomoću složenih pokazivačkih struktura; Indirektni pristup
+                            podacima; Pokazivači na funkcije; Standardni bibliotečki algoritmi;
+                            Blokovi i iteratori; Upotreba standardnih algoritama za sortiranje i
+                            pretragu; Strukture (slogovi ili zapisi); Pokazivači na strukture;
+                            Dinamička alokacija struktura; Generičke strukture; Strukture sa
+                            pokazivačima; Plitko kopiranje; Čvorovi; Povezane liste
+                            </li>
+                        <li>; Generičke klase; Preklapanje operatora;
+                            Funkcijski objekti (funktori); Standardni bibliotečki funktori; Veznici
+                            i adapteri
+                            </li>
+                        </ul>
+                        </div></div>
+
+
+    <br>
+            
+                        <div class="parent">
+                            <div id="VIS" class="div1">Predmet:<br>Vjerovatnoća i statistika</div>
+                            <div class="div2">Profesor: Amela Muratović-Ribič</div>
+                            <div class="div3">Asistent: Vedran Karahodžič</div>
+                            <div class="div4">Broj predavanja: 40</div>
+                            <div class="div5"> Broj vježbi: 25</div>
+                            <div class="div7">Uvodi se pojam vjerojatnostnog prostora i slučajnih varijabli. Obrađuju se osnovne diskretne i neprekinute 
+                                slučajne varijable, te slučajni vektori. Daju se osnove teorije uzoraka, teorije procjena i statističkih testova.</div>
+                            <div class="div6">Teme:
+                                 <ul>
+                                    <li>Uvod u statistiku i prikupljanje podataka; aritmetička sredina,
+                                            medijana, varijansa, standardna devijacija. Diskretni i neprekidni
+                                            podaci. Grafičko predstavljanje podataka.</li>
+                                    <li>Osnove kombinatorike: permutacije, kobinacije i varijacije.
+                                            Definicija vjerovatnoće. Vjerovatnoća unije događaja.</li>
+                                    <li>Uslovna vjerovatnoća, nezavisni događaji i Bajesova formula.</li>
+                                    <li>Matematičko očekivanje, sredina, varijansa i kovarijansa slučajne
+                                            veličine</li>
+                                    <li>Neke diskretne vjerovatnosne raspodjele: binomna, mulitonomijalna,
+                                            hipergeometrijska , Poissonova</li>
+                                    </ul>
+                                    </div></div>
+
+                 <br>
+                        <div class="parent">
+                            <div id="MUR1" class="div1">Predmet:<br>Matematika u računarstvu 1</div>
+                            <div class="div2">Profesor: Željko Jurić</div>
+                            <div class="div3">Asistent: //</div>
+                            <div class="div4">Broj predavanja: 56</div>
+                            <div class="div5"> Broj vježbi: 24</div>
+                            <div class="div7">Cilj kursa je ponuditi studentima najosnovnija znanja iz nekih matematičkih disciplina koje imaju primjene u računarstvu, 
+                                kao što su matematička logika, teorija skupova, elementarna teorija brojeva, te teorija automata i formalnih jezika.</div>
+                            <div class="div6">Teme:
+                                 <ul>
+                                    <li>Elementi logike iskaza i iskazne algebre: Iskazi; Osnovni zakoni logike
+                                            iskaza; Transformacije logičkih iskaza; Tautologije i matematički način
+                                            zaključivanja; Quineov postupak nalaženja MDNF i MKNF; Veitchovi
+                                            dijagrami; Shefferova i Pierceova operacija.</li>
+                                    <li>Elementi teorije skupova: Osnovni pojmovi teorije skupova; Operacije sa
+                                            skupovima; Zakoni algebre skupova; Uređene n-torke i Decartesov
+                                            produkt skupova; Binarne i n-arne relacije; Relacioni model baza
+                                            podataka; Preslikavanja (funkcije); Relacije ekvivalencije i poretka</li>
+                                    <li>Uvod u elementarnu teoriju brojeva: Djeljivost i kriteriji djeljivosti;
+                                            Prosti brojevi; Najveći zajednički djelilac i najmanji zajednički sadržilac;
+                                            Euklidov algoritam; Diofantove jednačine; Kongruencije i modularna
+                                            aritmetika; Neke primjene teorije brojeva u kriptografiji.</li>
+                                    <li>Uvod u diskretnu teoriju vjerovatnoće: Algebra događaja; Pojam i
+                                            računanje vjerovatnoće; Uvjetna (relativna) vjerovatnoća i nezavisni
+                                            događaji; Totalna vjerovatnoća i Bayesova teorema; Eksperimentalno
+                                            određivanje i statistička interpretacija značenja vjerovatnoće.</li>
+                                   
+                                    </ul>
+                                    <br><br>
+                                    </div></div>
+                                    <br>
+                                </div>
+            
+                                    <div id="drugagodina">
+                                    <div class="parent">
+                                        <div id="RMA" class="div1">Predmet:<br>Razvoj mobilnih aplikacija</div>
+                                        <div class="div2">Profesor: Vensada Okanović</div>
+                                        <div class="div3">Asistent: Irfan Prazina</div>
+                                        <div class="div4">Broj predavanja: 35</div>
+                                        <div class="div5">Broj vježbi: 15</div>
+                                        <div class="div7">Opis predmeta:<br>Principi razvoja mobilnih aplikacija: Mobilni korisnički interfejs,
+                                             upoznavanje s Android platformom.</div>
+                                        <div class="div6">Teme:
+                                             <ul>
+                                                <li> Hardverska i softverska arhitektura mobilnih uređaja. Osobine
+                                                    mobilnog hardvera. Mobilni operativni sistemi: pregled, poređenje.
+                                                    Mobilne vs. desktop. vs. web aplikacije: sličnosti i razlike. </li>
+                                                <li>Principi razvoja mobilnih aplikacija: Karakteristični jezici i
+                                                    paradigme. Alati. Višenitnost: foreground vs. background, garbage
+                                                    collection. Namjere (intents). Pohranjivanje podataka (data storage).
+                                                    </li>
+                                                <li>Mobilni korisnički interfejs: Deklarativni UI. Taktilni UI i geste
+                                                    (gestures). UI/UX design patterns u razvoju mobilnih aplikacija,
+                                                    MVC. Trendovi: tangible computing, wearable computing.
+                                                    </li>
+                                                <li>Komunikacija: Karakteristike bežičnih mreža, dizajn mrežnih
+                                                aplikacija za promjenljive performanse. Klijent-server arhitekture,
+                                                web servisi za mobilne aplikacije. Uobičajeni protokoli i formati
+                                                podataka. Oblak (cloud).</li>
+                                                </ul>
+                                                </div></div>
+                        
+                                                <br>
+                                    
+                                                </div>
+                                            
+                                            
+                                                  
+            
+
+                                           
+
+
+            
+
+    
+            <ul class="footer">
+                <li>Elektrotehnički fakultet Sarajevo</li>
+                <li>Razvoj softvera</li>
+                <li><a href="http://etf.unsa.ba/">etf.unsa.ba</a></li>
+   
+            </ul>
+            
+            
+    </body>
+</html>
